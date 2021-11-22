@@ -17,7 +17,7 @@ import ContactRouter from './routes/Contact';
 const app = express();
 dotenv.config();
 mongoose.connect(process.env.MONGO_URI, {
-    userNewUrlParser: true,
+    useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true
 }).then(() => {
