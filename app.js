@@ -10,8 +10,8 @@ import expressValidator from 'express-validator';
 import ProductRouter from './routes/Product';
 import CategoryRouter from './routes/Category';
 import AuthRouter from './routes/auth'
-import UserRouter from './routes/user'
-import ContactRouter from './routes/contact';
+import UserRouter from './routes/User'
+import ContactRouter from './routes/Contact';
 
 
 const app = express();
