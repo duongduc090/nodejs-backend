@@ -18,7 +18,8 @@ const app = express();
 dotenv.config();
 mongoose.connect(process.env.MONGO_URI, {
     userNewUrlParser: true,
-    useCreateIndex: true
+    useCreateIndex: true,
+    useUnifiedTopology: true
 }).then(() => {
     console.log(`Connected`);
 })
