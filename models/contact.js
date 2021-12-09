@@ -20,6 +20,15 @@ const ContactSchema = new mongoose.Schema({
         trim: true,
         required: true,
         maxLength: 1000
+    },
+    title: {
+        type: String,
+        trim: true,
+        required: true,
+    },
+    status: {
+        type: Boolean,
+        default: false
     }
 },{ timestamps: true});
 module.exports = mongoose.model("Contact", ContactSchema);
